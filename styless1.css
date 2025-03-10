@@ -1,0 +1,44 @@
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: teal;
+}
+.rotating-star{
+    font-size: 400px;
+    color: white;
+    animation: rotatex 10s linear infinite;
+
+}
+.star_container{
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 1px;
+    scroll-behavior: smooth;
+    text-wrap: 34px;
+    
+
+}
+@keyframes rotatex{
+    from{
+        transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg)
+        }
+}
+.star_container{
+    margin: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.hor{
+    rotate: 90deg;
+   
+    size: 100px;
+}
